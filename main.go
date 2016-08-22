@@ -6,6 +6,7 @@ import (
 	"fmt"
 	"log"
 	"os"
+	"github.com/urfave/negroni"
 )
 
 var port int
@@ -18,8 +19,6 @@ func main() {
 	flag.StringVar(&path, "path", "", "Path to serve files from. Default: current directory.")
 	flag.Parse()
 
-	http.Handle("/", http.FileServer(http.Dir(path)))
-
 	if path == "" {
 		cwd, err := os.Getwd()
 
@@ -30,7 +29,12 @@ func main() {
 		path = cwd
 	}
 
+	mux := http.NewServeMux()
+	n := negroni.New()
+	n.Use(negroni.NewStatic(http.Dir(path)))
+	n.UseHandler(mux)
+
 	log.Printf("Listening on %s:%d and serving %s\n", host, port, path)
 
-	http.ListenAndServe(fmt.Sprintf("%s:%d", host, port), nil)
+	http.ListenAndServe(fmt.Sprintf("%s:%d", host, port), n)
 }
