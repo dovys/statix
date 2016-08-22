@@ -7,7 +7,6 @@ Not intended to be run on any production environment.
 [Download](https://dovys.github.io/statix)
 
 ## Usage
-Serving current directory
 ```sh
 cd /path/to/project
 ./statix
