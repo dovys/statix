@@ -12,7 +12,7 @@ Serving current directory
 cd /path/to/project
 ./statix
 
-2016/08/22 11:36:03 Listening on :3003 and serving /Users/dovys/dev/dovyscom
+2016/08/22 11:36:03 Listening on :3003 and serving /path/to/project
 ```
 
 **Additional flags**
