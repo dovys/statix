@@ -17,9 +17,9 @@ cd /path/to/project
 
 **Additional flags**
 ```sh
-  --host # Host.
-  --port # Port to listen on. (default 3003)
-  --path # Path to serve files from. Default: current directory.
+./statix --port 8080 --host 127.0.0.1 --path ~/www
+
+2016/08/22 22:26:45 Listening on 127.0.0.1:8080 and serving /Users/dovys/www
 ```
 
 ## Building from source
