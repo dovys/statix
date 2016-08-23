@@ -4,7 +4,22 @@ Statix is a simple web server for static site development that works with Linux,
 
 Not intended to be run on any production environment.
 
-[Download](https://dovys.github.io/statix)
+## Install
+
+#### macOS
+```sh
+wget https://github.com/dovys/statix/releases/download/1.0.0/statix-macOS-v1.0.0-darwin-10.6-386.tar.gz
+tar -C /usr/local/bin -xzf statix-macOS-v1.0.0-darwin-10.6-386.tar.gz
+```
+
+#### Linux
+```sh
+wget https://github.com/dovys/statix/releases/download/1.0.0/statix-linux-v1.0.0-linux-386.tar.gz
+tar -C /usr/local/bin -xzf statix-linux-v1.0.0-linux-386.tar.gz
+```
+
+#### Windows
+[Download statix.exe](https://github.com/dovys/statix/releases/download/1.0.0/windows-v1.0.0-windows-4.0-386.zip)
 
 ## Usage
 ```sh
