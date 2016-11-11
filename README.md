@@ -8,7 +8,7 @@ Not intended to be run on any production environment.
 
 #### macOS
 ```sh
-wget https://github.com/dovys/statix/releases/download/1.0.0/statix-macOS-v1.0.0-darwin-10.6-386.tar.gz
+curl -LO https://github.com/dovys/statix/releases/download/1.0.0/statix-macOS-v1.0.0-darwin-10.6-386.tar.gz
 tar -C /usr/local/bin -xzf statix-macOS-v1.0.0-darwin-10.6-386.tar.gz
 ```
 
